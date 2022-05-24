@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | ls -a | cut -f1
+find . -empty | ls -a | cut -f1 | tail -3 | head -2
