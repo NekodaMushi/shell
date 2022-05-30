@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #script that displays the time for 12 hours and 59 minutes
-h=1
+h=0
 m=1
 while (( h < 13 ))
 do
