@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Loop to list files cut after the first dash
+
+for FILE in *
+do
+	echo "$FILE" | cut -d '-' -f2
+done
