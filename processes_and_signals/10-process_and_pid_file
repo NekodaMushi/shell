@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Using two signals to stop a process
+sudo bash -c "echo $$ > /var/run/myscript.pid"
+trap "echo 'Y U no love me?!'exit" SIGINT
+trap "echo 'I hate the kill command';sudo rm /var/run/myscript.pid;exit" SIGTERM
+trap "rm /var/run/myscript.pid;exit" SIGQUIT
+while :
+do 
+echo "To infinity and beyond"
+sleep 2
+done
